@@ -1,23 +1,34 @@
-# Compiled class file
-*.class
+import javax.swing.JOptionPane;
 
-# Log file
-*.log
 
-# BlueJ files
-*.ctxt
+public class atv2{
+    
+    public static void main(String args[]) {
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog("forneça a largura"));
+        double num2 = Double.parseDouble(JOptionPane.showInputDialog("forneça o comprimento"));
+       
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+        double result = num1 * num2 ;
+        double preco = result * 45.00;
+                JOptionPane.showMessageDialog(null,"\nValores inseridos foram: " +num1 + ", " +num2 + "  "  
+                        +"\nA piscina solicitada tem: " +result +"metros cubicos" 
+                        +"\nO valor da construção será de: R$" +preco);
+                        System.exit(0);
+        }
+}
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+av02
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+import javax.swing.JOptionPane;
+
+public class NewClass {
+
+    public static void main(String args[]) {
+        Double num1 = Double.parseDouble(JOptionPane.showInputDialog("forneça a largura"));
+        Double num2 = Double.parseDouble(JOptionPane.showInputDialog("forneça a profundidade"));
+
+        double result = num1 * num2;
+                JOptionPane.showMessageDialog(null, result);
+        System.exit(0);
+    }
+}
